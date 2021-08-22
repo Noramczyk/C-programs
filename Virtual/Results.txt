@@ -1,0 +1,123 @@
+
+[noramczl@athena VirtualMEM]> ./Rev9 input.txt FIFO
+ 8 4 12
+(FIFO)
+Page 4 loaded into Frame 0
+Page 3 loaded into Frame 1
+Page 4 already in Frame 0
+Page 6 loaded into Frame 2
+Page 1 loaded into Frame 3
+Page 6 already in Frame 2
+Page 4 already in Frame 0
+Page 4 unloaded from Frame 0, Page 5 loaded into Frame 0
+Page 3 unloaded from Frame 1, Page 2 loaded into Frame 1
+Page 6 unloaded from Frame 2, Page 4 loaded into Frame 2
+Page 1 unloaded from Frame 3, Page 6 loaded into Frame 3
+Page 5 unloaded from Frame 0, Page 1 loaded into Frame 0
+9 Page Faults
+[noramczl@athena VirtualMEM]> ./Rev9 input.txt LRU
+ 8 4 12
+(LRU)
+Page 4 loaded into Frame 0
+Page 3 loaded into Frame 1
+Page 4 already in Frame 0
+Page 6 loaded into Frame 2
+Page 1 loaded into Frame 3
+Page 6 already in Frame 2
+Page 4 already in Frame 0
+Page 3 unloaded from Frame 1, Page 5 loaded into Frame 1
+Page 1 unloaded from Frame 3, Page 2 loaded into Frame 3
+Page 4 already in Frame 0
+Page 6 already in Frame 2
+Page 5 unloaded from Frame 1, Page 1 loaded into Frame 1
+7 Page Faults
+[noramczl@athena VirtualMEM]> ./Rev9 input.txt OPT
+ 8 4 12
+(OPT)
+page 4 loaded into Frame 0
+page 3 loaded into Frame 1
+page 4 already in Frame 0
+page 6 loaded into Frame 2
+page 1 loaded into Frame 3
+page 6 already in Frame 2
+page 4 already in Frame 0
+Page 3 unloaded from Frame 1, Page 5 loaded into Frame 1
+Page 5 unloaded from Frame 1, Page 2 loaded into Frame 1
+page 4 already in Frame 0
+page 6 already in Frame 2
+page 1 already in Frame 3
+6 Page Faults
+
+
+[noramczl@athena VirtualMEM]> ./Rev9 input2.txt FIFO
+ 8 3 20
+(FIFO)
+Page 7 loaded into Frame 0
+Page 2 loaded into Frame 1
+Page 3 loaded into Frame 2
+Page 7 unloaded from Frame 0, Page 1 loaded into Frame 0
+Page 2 already in Frame 1
+Page 2 unloaded from Frame 1, Page 5 loaded into Frame 1
+Page 3 already in Frame 2
+Page 3 unloaded from Frame 2, Page 4 loaded into Frame 2
+Page 1 unloaded from Frame 0, Page 6 loaded into Frame 0
+Page 5 unloaded from Frame 1, Page 7 loaded into Frame 1
+Page 7 already in Frame 1
+Page 4 unloaded from Frame 2, Page 1 loaded into Frame 2
+Page 6 unloaded from Frame 0, Page 0 loaded into Frame 0
+Page 7 unloaded from Frame 1, Page 5 loaded into Frame 1
+Page 1 unloaded from Frame 2, Page 4 loaded into Frame 2
+Page 0 unloaded from Frame 0, Page 6 loaded into Frame 0
+Page 5 unloaded from Frame 1, Page 2 loaded into Frame 1
+Page 4 unloaded from Frame 2, Page 3 loaded into Frame 2
+Page 6 unloaded from Frame 0, Page 0 loaded into Frame 0
+Page 2 unloaded from Frame 1, Page 1 loaded into Frame 1
+17 Page Faults
+[noramczl@athena VirtualMEM]> ./Rev9 input2.txt LRU
+ 8 3 20
+(LRU)
+Page 7 loaded into Frame 0
+Page 2 loaded into Frame 1
+Page 3 loaded into Frame 2
+Page 7 unloaded from Frame 0, Page 1 loaded into Frame 0
+Page 2 already in Frame 1
+Page 3 unloaded from Frame 2, Page 5 loaded into Frame 2
+Page 1 unloaded from Frame 0, Page 3 loaded into Frame 0
+Page 2 unloaded from Frame 1, Page 4 loaded into Frame 1
+Page 5 unloaded from Frame 2, Page 6 loaded into Frame 2
+Page 3 unloaded from Frame 0, Page 7 loaded into Frame 0
+Page 7 already in Frame 0
+Page 4 unloaded from Frame 1, Page 1 loaded into Frame 1
+Page 6 unloaded from Frame 2, Page 0 loaded into Frame 2
+Page 7 unloaded from Frame 0, Page 5 loaded into Frame 0
+Page 1 unloaded from Frame 1, Page 4 loaded into Frame 1
+Page 0 unloaded from Frame 2, Page 6 loaded into Frame 2
+Page 5 unloaded from Frame 0, Page 2 loaded into Frame 0
+Page 4 unloaded from Frame 1, Page 3 loaded into Frame 1
+Page 6 unloaded from Frame 2, Page 0 loaded into Frame 2
+Page 2 unloaded from Frame 0, Page 1 loaded into Frame 0
+18 Page Faults
+[noramczl@athena VirtualMEM]> ./Rev9 input2.txt OPT
+ 8 3 20
+(OPT)
+page 7 loaded into Frame 0
+page 2 loaded into Frame 1
+page 3 loaded into Frame 2
+Page 7 unloaded from Frame 0, Page 1 loaded into Frame 0
+page 2 already in Frame 1
+Page 2 unloaded from Frame 1, Page 5 loaded into Frame 1
+page 3 already in Frame 2
+Page 3 unloaded from Frame 2, Page 4 loaded into Frame 2
+Page 4 unloaded from Frame 2, Page 6 loaded into Frame 2
+Page 6 unloaded from Frame 2, Page 7 loaded into Frame 2
+page 7 already in Frame 2
+page 1 already in Frame 0
+Page 7 unloaded from Frame 2, Page 0 loaded into Frame 2
+page 5 already in Frame 1
+Page 5 unloaded from Frame 1, Page 4 loaded into Frame 1
+Page 4 unloaded from Frame 1, Page 6 loaded into Frame 1
+Page 6 unloaded from Frame 1, Page 2 loaded into Frame 1
+Page 2 unloaded from Frame 1, Page 3 loaded into Frame 1
+page 0 already in Frame 2
+page 1 already in Frame 0
+13 Page Faults
